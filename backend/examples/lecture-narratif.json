@@ -1,0 +1,149 @@
+{
+  "type": "LECTURE-NARRATIF",
+  "niveau": "Primaire 6e",
+  "source": "Manuel TRIO, ERPI — Univers 8 : L'envers du décor. Texte inédit de l'auteure québécoise Émilie Rivard.",
+  "difficulte_estimee": 6,
+  "notes_pedagogiques": {
+    "longueur_texte": "95 lignes",
+    "nombre_questions": 10,
+    "notion_cible_grammaticale": "Mots de substitution (pronoms de reprise, mots synonymes, mots génériques/spécifiques)",
+    "theme_principal": "Amitié, persévérance, danse hip-hop, capsules vidéo promotionnelles, rivalité entre écoles",
+    "contexte_culturel": "Québec, place publique, école de danse communautaire menacée de fermeture",
+    "structure_narrative": "Situation initiale (amitié + école menacée) → problème (annonce de fermeture) → péripéties (recrutement, poursuite d'Olivier) → dénouement (capsule réussie, nouvelles inscriptions)",
+    "personnages": ["Florence (Flo)", "William (Will)", "Kyle (professeur)", "Olivier (rival, école Tutu et Claquettes)"],
+    "lieux": ["École de danse du Lac", "Place publique Jérémy-du-Lac", "Devant une boulangerie", "Le parc", "Sous-sol familial de William"],
+    "types_questions": [
+      "Compréhension littérale (réponse dans le texte)",
+      "Explication avec justification textuelle",
+      "Inférence (pourquoi / intention d'un personnage)",
+      "Choix multiple (coche la bonne case)",
+      "Ordre chronologique (numérotation)",
+      "Vrai ou Faux avec indices de temps",
+      "Caractéristiques physiques / point commun entre personnages",
+      "Réaction personnelle (appréciation avec 2 critères et exemples précis)"
+    ],
+    "style_consignes": "Verbe d'action en gras au début de la consigne (Explique, Relève, Coche, Place, Souligne). Réponses courtes à développement, choix multiple, ou tâche de repérage dans le texte.",
+    "repartition_questions": {
+      "comprehension_litterale": "Q1, Q4, Q6",
+      "explication_justifiee": "Q2, Q3",
+      "inference": "Q5, Q9",
+      "ordre_chronologique": "Q7",
+      "vrai_faux_avec_preuves": "Q8",
+      "reaction_personnelle": "Q10, Q11 (appréciation)"
+    }
+  },
+  "texte_complet": {
+    "titre": "Sauvons l'école de danse",
+    "auteure": "Émilie Rivard",
+    "texte": "Florence et William sont de grands amis depuis qu'ils se sont connus à l'École de danse du Lac, le meilleur endroit en ville pour apprendre le hip-hop, cette danse qu'ils adorent. Will aime particulièrement les mouvements acrobatiques au sol. Flo a commencé à y suivre des cours pour rendre hommage aux origines afro-américaines de son grand-père, un grand danseur lui aussi.\n\nAujourd'hui, ils répètent leur chorégraphie avec le cœur plus lourd que jamais. Kyle, leur professeur, vient de leur apprendre que l'École de danse du Lac devra fermer ses portes, car les élèves ne sont plus suffisamment nombreux.\n\n— C'est la faute de la nouvelle école, Tutu et Claquettes ! peste William.\n— L'école ne peut pas fermer ! déclare Florence. Tout le monde doit savoir que c'est le meilleur établissement pour apprendre à danser. Pas Tutu et Claquettes ! On va trouver de nouveaux élèves, nous !\n— Où ? Comment ? demande Kyle, visiblement sceptique.\n— Partout ! On va montrer au monde entier que n'importe qui peut danser ! s'exclame Florence avec enthousiasme.\n\nElle a d'ailleurs sa petite idée : créer des capsules vidéo qui feront la promotion de leur école de danse favorite.\n\nLe samedi matin suivant, son cellulaire en main, William rejoint Florence à la place publique Jérémy-du-Lac. C'est le coin le plus achalandé de la ville. William démarre l'enregistrement pendant que Florence s'adresse à une femme vêtue d'une longue robe jaune.\n\n— Bonjour madame ! Je suis une élève de l'École de danse du Lac. Est-ce que vous accepteriez que je vous enseigne quelques pas ?\n— Je suis incapable de danser ! répond la femme en riant.\n— Moi, je suis convaincue qu'avec un coup de pouce, n'importe qui peut y arriver !\n\nFlo a l'air si sûre d'elle qu'elle convainc la dame de tenter l'expérience. La prof du jour exécute quelques pas de hip-hop au ralenti. Elle envoie d'abord son pied droit plus loin vers la droite, puis elle glisse pour que le gauche le rejoigne. Elle répète ensuite les mêmes mouvements de l'autre côté, avant d'ajouter des gestes avec ses bras.\n\nLa femme tente de réaliser les mêmes gestes avec autant de style… sans succès. Florence n'oserait jamais le dire à la dame, mais elle lui rappelle un canard qui essaie d'avancer sur une patinoire, mais qui glisse à chaque pas !\n\nPrès d'eux, une fillette d'environ cinq ans réalise l'enchaînement à la perfection ! La femme s'écrie alors : « Hé ! C'est elle que vous devez filmer ! Moi, je vais passer mon tour, finalement. »\n\nFlorence est un peu déçue de ne pas avoir atteint son objectif de faire danser la dame vêtue de jaune, mais William et elle sont heureux de pouvoir filmer l'incroyable petite artiste en action.\n\nMalgré ce petit échec, Flo n'est pas prête à abandonner le défi qu'elle s'est donné de faire exécuter des pas de hip-hop à n'importe qui. Dans la demi-heure qui suit, elle réussit à faire danser un homme à l'air affreusement sévère, une vieille dame souriante, deux touristes amusés et même deux chiens !\n\nFlorence remercie le propriétaire des bêtes poilues :\n— Merci ! Vos toutous danseurs vont nous aider à sauver notre école de danse. N'hésitez pas à vous inscrire, vous auriez beaucoup de plaisir vous aussi !\n\nC'est à ce moment que Will aperçoit une tête qu'il reconnaît devant la boulangerie. C'est celle d'Olivier, un danseur de l'école Tutu et Claquettes. Flo et lui l'ont croisé lors de leur dernière compétition.\n\nOlivier semble avoir deviné les intentions de William et Florence. En deux enjambées, il se rue sur Will, lui vole son téléphone et court à toutes jambes vers le parc.\n\nSans hésiter une seconde, Will et Flo se lancent à la poursuite de leur rival. Oli est rapide, mais les deux amis sont aussi forts et endurants grâce à leur excellent entraînement. Alors qu'Olivier contourne un banc, Flo bondit par-dessus l'obstacle. Elle réduit ainsi la distance entre elle et sa cible.\n\nSoudain, Florence reconnaît la femme à la robe jaune. À sa grande surprise, celle-ci étire sa jambe exactement comme Flo le lui a enseigné moins d'une heure plus tôt. Elle barre ainsi la route à Olivier, qui tombe au sol.\n\nWilliam parvient à récupérer son précieux appareil. Il est cependant déçu de ne pas avoir pu capter la scène en images : la poursuite, le saut de Florence, le pas de danse de la femme. Tout ça aurait été sensationnel dans une capsule web !\n\nUne fois dans le sous-sol familial, William transfère tous les fichiers de son cellulaire à l'ordinateur, puis il télécharge un logiciel de montage. Ensemble, Florence et lui revivent chaque moment passé avec les apprentis danseurs. Ils rient, s'émerveillent et même parfois s'émeuvent. Ces images sont parfaites !\n\nLeur travail sera super simple à partir de là. Super simple ? Vraiment ? Même si Will a téléchargé un logiciel qui lui facilite la tâche, choisir tous les petits moments à conserver et les mettre bout à bout est très long. Heureusement, leur entraînement de danse ne leur a pas seulement appris à être forts et souples, ils les a aussi rendus très persévérants !\n\nUne fois que toutes les images y sont, les deux amis ajoutent de la musique, des transitions, quelques blagues écrites et surtout le logo et les coordonnées de l'École de danse du Lac.\n\nTrois jours plus tard, Florence et William constatent que leur première capsule a été visionnée plus de 150 fois. Et ce n'est pas tout : Kyle annonce que l'école a déjà reçu une vingtaine de nouvelles inscriptions !\n\nLes deux amis sont très fiers d'eux, mais ils ne sont pas surpris. Ils ont toujours su que la danse et la créativité pouvaient réaliser des miracles !"
+  },
+  "questions": [
+    {
+      "numero": 1,
+      "type": "comprehension_litterale + reperage",
+      "consigne": "Pourquoi l'École de danse du Lac doit-elle fermer ses portes ?",
+      "sous_consigne": "Souligne dans le texte la solution de Florence pour remédier à ce problème.",
+      "reponse_attendue": "L'École de danse du Lac doit fermer ses portes car les élèves ne sont plus suffisamment nombreux.",
+      "passage_a_souligner": "créer des capsules vidéo qui feront la promotion de leur école de danse favorite"
+    },
+    {
+      "numero": 2,
+      "type": "explication_justifiee",
+      "consigne": "Explique pourquoi William et Florence choisissent le coin le plus achalandé de la ville pour enregistrer leurs vidéos.",
+      "reponse_attendue": "Ils choisissent le coin le plus achalandé de la ville parce qu'il y a beaucoup de personnes, ce qui leur permet de filmer plus de gens en train de danser et ainsi démontrer que n'importe qui peut danser."
+    },
+    {
+      "numero": 3,
+      "type": "comprehension_litterale",
+      "consigne": "À la ligne 50, de quel « petit échec » parle-t-on ?",
+      "reponse_attendue": "Le petit échec dont il est question est que Florence n'a pas réussi à faire danser la dame vêtue de jaune."
+    },
+    {
+      "numero": 4,
+      "type": "choix_multiple",
+      "consigne": "De quelle façon la dame vêtue de jaune vient-elle en aide à Will et Flo ? Coche la bonne case.",
+      "choix": [
+        "Elle participe à la vidéo en exécutant la danse à la perfection.",
+        "Elle intercepte la personne qui a volé le téléphone cellulaire de Will.",
+        "Elle visionne la capsule 150 fois.",
+        "Elle s'inscrit à l'école de danse."
+      ],
+      "reponse": "Elle intercepte la personne qui a volé le téléphone cellulaire de Will.",
+      "note_corrige": "La dame étire sa jambe comme Flo le lui a enseigné, ce qui barre la route à Olivier qui tombe au sol."
+    },
+    {
+      "numero": 5,
+      "type": "inference",
+      "consigne": "Quel est le point commun de William, Florence et Olivier ?",
+      "reponse_attendue": "Ils pratiquent tous les trois la danse. William et Florence sont à l'École de danse du Lac, et Olivier est danseur à l'école Tutu et Claquettes."
+    },
+    {
+      "numero": 6,
+      "type": "reperage_caracteristiques",
+      "consigne": "Relève deux caractéristiques physiques que partagent William et Florence.",
+      "reponse_attendue": [
+        "Ils ont tous les deux la peau foncée.",
+        "Ils ont tous les deux les cheveux noirs."
+      ],
+      "note_corrige": "Information tirée des illustrations du manuel. Acceptable si l'élève s'appuie sur le texte ou les images."
+    },
+    {
+      "numero": 7,
+      "type": "ordre_chronologique",
+      "consigne": "Place en ordre chronologique les actions de William. Numérote-les de 1 à 4.",
+      "elements": [
+        "À l'aide d'un logiciel, choisir les images et les assembler.",
+        "Ajouter de la musique et des transitions.",
+        "Transférer les fichiers du cellulaire à l'ordinateur.",
+        "Télécharger un logiciel de montage."
+      ],
+      "reponse_ordre": {
+        "1": "Transférer les fichiers du cellulaire à l'ordinateur.",
+        "2": "Télécharger un logiciel de montage.",
+        "3": "À l'aide d'un logiciel, choisir les images et les assembler.",
+        "4": "Ajouter de la musique et des transitions."
+      }
+    },
+    {
+      "numero": 8,
+      "type": "vrai_faux_avec_preuves",
+      "consigne": "Vrai ou Faux ? Coche la bonne case.",
+      "affirmation": "L'histoire se déroule sur une seule journée.",
+      "reponse": "Faux",
+      "sous_consigne": "Relève deux indices de temps qui prouvent ta réponse.",
+      "indices_attendus": [
+        "« Le samedi matin suivant »",
+        "« Trois jours plus tard »"
+      ]
+    },
+    {
+      "numero": 9,
+      "type": "inference_intention",
+      "consigne": "Selon toi, pourquoi Olivier vole-t-il le téléphone de William ? Explique ta réponse en t'appuyant sur le texte.",
+      "reponse_attendue": "Olivier vole le téléphone de William parce qu'il veut empêcher Will et Flo de réussir leur plan de sauver l'École de danse du Lac. Dans le texte, il est dit qu'Olivier « semble avoir deviné les intentions de William et Florence », ce qui montre qu'il veut nuire à leur projet pour que son école rivale reste la seule."
+    },
+    {
+      "numero": 10,
+      "type": "reaction_personnelle",
+      "consigne": "Si tu pouvais être un personnage de cette histoire, lequel serais-tu ? Explique ta réponse en t'appuyant sur le texte.",
+      "criteres_evaluation": [
+        "L'élève choisit un personnage et le nomme clairement.",
+        "L'élève donne au moins une raison appuyée sur un élément précis du texte.",
+        "La réponse est rédigée en phrases complètes."
+      ],
+      "note_corrige": "Réponse ouverte. Exemples acceptables : Florence pour son leadership et sa persévérance, William pour ses talents de montage vidéo, etc."
+    },
+    {
+      "numero": 11,
+      "type": "appreciation_critique",
+      "consigne": "As-tu aimé cette histoire ? Explique pourquoi en t'appuyant sur deux critères d'appréciation et en utilisant des exemples précis pour chacun.",
+      "criteres_evaluation": [
+        "L'élève exprime clairement son appréciation (oui/non/mitigée).",
+        "L'élève nomme deux critères distincts (ex. : intrigue, personnages, suspense, humour, thème, style d'écriture).",
+        "Chaque critère est illustré par un exemple précis tiré du texte.",
+        "La réponse est rédigée en phrases complètes et organisées."
+      ],
+      "note_corrige": "Réponse ouverte. Critères valides : l'intrigue (menace de fermeture), le suspense (vol du téléphone, poursuite), l'humour (comparaison avec un canard), les personnages attachants, le thème de la persévérance, etc."
+    }
+  ]
+}

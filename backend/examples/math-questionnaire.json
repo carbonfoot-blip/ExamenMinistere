@@ -1,0 +1,254 @@
+{
+  "type": "MATH-QUESTIONNAIRE",
+  "niveau": "Primaire 6e",
+  "source": "Examen Jean-Michel Panet",
+  "difficulte_estimee": 6,
+  "notes_pedagogiques": {
+    "format": "Choix multiples (A/B/C/D), 20 questions",
+    "style_consignes": "Question en gras, contexte en texte normal avant la question. Contextes réalistes (camp, animaux, sport, école).",
+    "types_couverts": [
+      "Diagramme circulaire + proportions",
+      "Probabilité",
+      "Géométrie (cercles, périmètre)",
+      "Formule d'Euler (polyèdres)",
+      "Algèbre (terme manquant, puissances)",
+      "Lecture de tableaux + conversion d'unités",
+      "Conversion de temps",
+      "Plan cartésien (coordonnées)",
+      "Opérations sur décimaux (×÷ puissances de 10)",
+      "Puissances",
+      "Divisibilité + grands nombres",
+      "Pourcentage + aires imbriquées",
+      "Transformations géométriques (translation)",
+      "Classification de triangles",
+      "Mesure (volume/capacité)",
+      "Fractions d'un total",
+      "Comparaison de fractions et décimaux",
+      "Aire (carré vs rectangle)",
+      "Chaîne d'opérations (priorité)",
+      "Suite géométrique (pattern visuel)"
+    ]
+  },
+  "questions": [
+    {
+      "numero": 1,
+      "contexte": "Lors d'un camp d'été scientifique, les adolescents inscrits doivent choisir entre l'une des trois activités suivantes : la robotique, le codage et l'astronomie.\nLe diagramme circulaire suivant représente le choix des adolescents inscrits à ce camp.\n[DIAGRAMME CIRCULAIRE : robotique = section sans motif, codage = section sans motif, astronomie = section hachurée représentant 1/3 du cercle. Les sections robotique et codage sont respectivement 75° et 45° approximativement (non étiquetées précisément).]\nLors de ce camp, 60 adolescents se sont inscrits à l'activité d'astronomie.",
+      "question": "Combien d'enfants se sont inscrits à l'activité de robotique ?",
+      "choix": { "A": "20", "B": "45", "C": "75", "D": "120" },
+      "reponse": "C",
+      "concept": "Diagramme circulaire, fractions, proportions",
+      "note_corrige": "L'astronomie = 1/3 du cercle = 60 élèves. Total = 180. Robotique ≈ 75/180 de l'effectif, soit 75 élèves (lecture du diagramme)."
+    },
+    {
+      "numero": 2,
+      "contexte": "Adriano doit piger une bille dans un sac. Le sac contient 36 billes de même grosseur : des rouges, des vertes et des jaunes.\n• La probabilité qu'il pige une bille rouge est de 1/6.\n• La probabilité qu'il pige une bille verte est de 0,75.",
+      "question": "Combien y a-t-il de billes jaunes dans le sac ?",
+      "choix": { "A": "3", "B": "6", "C": "22", "D": "33" },
+      "reponse": "B",
+      "concept": "Probabilité, fractions, pourcentages",
+      "note_corrige": "Rouges : 1/6 × 36 = 6. Vertes : 0,75 × 36 = 27. Jaunes : 36 − 6 − 27 = 3. Réponse attendue : A) 3. (Note : vérifier si la réponse officielle diffère selon la version de l'examen.)"
+    },
+    {
+      "numero": 3,
+      "contexte": "Ci-dessous, trois cercles isométriques sont inscrits dans un rectangle.\n[FIGURE : Un rectangle contenant 3 cercles identiques côte à côte, chaque cercle tangent aux deux côtés longs du rectangle et aux cercles adjacents.]\nLe rayon d'un cercle est de 3 cm.",
+      "question": "Quel est le périmètre du rectangle ?",
+      "choix": { "A": "12 cm", "B": "24 cm", "C": "48 cm", "D": "108 cm" },
+      "reponse": "C",
+      "concept": "Géométrie, cercles inscrits, périmètre",
+      "note_corrige": "Diamètre = 6 cm. Largeur du rectangle = 6 cm (1 diamètre). Longueur = 3 × 6 = 18 cm. Périmètre = 2 × (18 + 6) = 48 cm."
+    },
+    {
+      "numero": 4,
+      "contexte": "Un polyèdre possède 20 faces et 30 arêtes.",
+      "question": "Combien de sommets ce polyèdre possède-t-il ?",
+      "choix": { "A": "8", "B": "10", "C": "12", "D": "50" },
+      "reponse": "C",
+      "concept": "Formule d'Euler : S − A + F = 2",
+      "note_corrige": "S = 2 − F + A = 2 − 20 + 30 = 12 sommets."
+    },
+    {
+      "numero": 5,
+      "contexte": "250 − ? = 2³ × 24",
+      "question": "Quel est le terme manquant dans l'égalité suivante ?",
+      "choix": { "A": "28", "B": "34", "C": "58", "D": "106" },
+      "reponse": "C",
+      "concept": "Algèbre, puissances, ordre des opérations",
+      "note_corrige": "2³ = 8. 8 × 24 = 192. 250 − ? = 192 → ? = 58."
+    },
+    {
+      "numero": 6,
+      "contexte": "Le tableau suivant fournit de l'information sur la masse et la longueur d'un grand requin blanc adulte.\n[TABLEAU 1 : Masse : 520 kg à 1 100 kg | Longueur : 5 m à 6,5 m]\nLors d'une recherche, des océanographes ont étudié quatre requins. Voici de l'information sur la masse et la longueur de ces quatre requins.\n[TABLEAU 2 :\nRequin 1 : Masse 800 kg, Longueur 45 dm\nRequin 2 : Masse 1 200 kg, Longueur 55 dm\nRequin 3 : Masse 800 000 g, Longueur 620 cm\nRequin 4 : Masse 850 000 kg, Longueur 490 cm]",
+      "question": "Lequel de ces requins pourrait être un grand requin blanc adulte ?",
+      "choix": { "A": "Requin 1", "B": "Requin 2", "C": "Requin 3", "D": "Requin 4" },
+      "reponse": "C",
+      "concept": "Conversion d'unités (kg/g, dm/cm/m), lecture de tableau",
+      "note_corrige": "Requin 3 : 800 000 g = 800 kg (dans l'intervalle 520–1100 kg). 620 cm = 6,2 m (dans l'intervalle 5–6,5 m). ✓"
+    },
+    {
+      "numero": 7,
+      "contexte": "Lors d'une épreuve, Mathilde dispose de 0,25 heure pour parcourir 3 km à la course. Elle a terminé l'épreuve en 12,5 minutes.",
+      "question": "Combien de temps avant la fin de l'épreuve Mathilde a-t-elle terminé ?",
+      "choix": { "A": "1,5 min", "B": "3 min", "C": "150 sec", "D": "250 sec" },
+      "reponse": "C",
+      "concept": "Conversion de temps (heures, minutes, secondes)",
+      "note_corrige": "0,25 h = 15 min. 15 min − 12,5 min = 2,5 min = 150 secondes."
+    },
+    {
+      "numero": 8,
+      "contexte": "Les points A, B et C(3, 25) sont placés dans le plan cartésien ci-dessous.\n[FIGURE : Plan cartésien avec point A sur l'axe des x (côté négatif, environ x = −9, y = 0) et point B en bas à droite (environ x = 15, y = −15). Le point C est annoté (3, 25) par l'élève.]",
+      "question": "Quelles sont les coordonnées des points A et B ?",
+      "choix": {
+        "A": "A(0, −9) et B(15, −25)",
+        "B": "A(−9, 0) et B(15, −9)",
+        "C": "A(−9, 0) et B(15, −15)",
+        "D": "A(0, −9) et B(15, −15)"
+      },
+      "reponse": "C",
+      "concept": "Plan cartésien, lecture de coordonnées",
+      "note_corrige": "A est sur l'axe des x, donc y = 0 → A(−9, 0). B est à droite et en bas → B(15, −15)."
+    },
+    {
+      "numero": 9,
+      "question": "Laquelle des affirmations suivantes est vraie ?",
+      "choix": {
+        "A": "0,25 × 100 = 2 500",
+        "B": "2,5 × 1 000 = 250",
+        "C": "25 ÷ 1 000 = 0,025",
+        "D": "2,5 ÷ 100 = 0,25"
+      },
+      "reponse": "C",
+      "concept": "Multiplication et division de décimaux par puissances de 10",
+      "note_corrige": "25 ÷ 1 000 = 0,025 ✓. Les autres : 0,25 × 100 = 25 (pas 2 500), 2,5 × 1 000 = 2 500 (pas 250), 2,5 ÷ 100 = 0,025 (pas 0,25)."
+    },
+    {
+      "numero": 10,
+      "question": "Laquelle des affirmations suivantes est vraie ?",
+      "choix": {
+        "A": "10² = 2 × 10",
+        "B": "2⁵ = 5²",
+        "C": "2⁴ = 4²",
+        "D": "5³ = 5 + 5 + 5"
+      },
+      "reponse": "C",
+      "concept": "Puissances, notation exponentielle",
+      "note_corrige": "2⁴ = 16 et 4² = 16 ✓. Les autres : 10² = 100 ≠ 20, 2⁵ = 32 ≠ 25, 5³ = 125 ≠ 15."
+    },
+    {
+      "numero": 11,
+      "contexte": "Ludovic doit choisir un nouveau mot de passe pour accéder à son compte de jeux vidéos en ligne.\nLe mot de passe doit être :\n• Un nombre supérieur à 150 000, mais inférieur à 1 000 000.\n• Un nombre à la fois divisible par 3 et par 10.",
+      "question": "Lequel des mots de passe suivants Ludovic peut-il choisir ?",
+      "choix": { "A": "148 320", "B": "448 320", "C": "748 425", "D": "948 320" },
+      "reponse": "B",
+      "concept": "Divisibilité (par 3 et par 10), encadrement de nombres",
+      "note_corrige": "Divisible par 10 → se termine par 0. A : 148 320 < 150 000 ✗. B : 448 320 > 150 000, se termine par 0, somme des chiffres = 4+4+8+3+2+0 = 21 ÷ 3 ✓. D : 948 320 : somme = 26, non divisible par 3 ✗."
+    },
+    {
+      "numero": 12,
+      "contexte": "Dans la cour arrière de sa maison, Judith a aménagé un grand jardin.\nCi-dessous, le carré ABCD représente la cour de Judith et le carré EFGG son jardin.\n[FIGURE : Grand carré ABCD avec un carré EFGG centré en bas. La distance du haut du grand carré au haut du petit carré est 3,2 m. Le côté du petit carré mesure 4,8 m.]",
+      "question": "Quel pourcentage de la cour le jardin occupe-t-il ?",
+      "choix": { "A": "23 %", "B": "36 %", "C": "48 %", "D": "64 %" },
+      "reponse": "C",
+      "concept": "Pourcentage, aires de carrés imbriqués",
+      "note_corrige": "Côté grand carré = 3,2 + 4,8 = 8 m. Aire grand carré = 64 m². Aire petit carré = 4,8² = 23,04 m². Pourcentage = 23,04 ÷ 64 × 100 ≈ 36 %. (Note : réponse B = 36 % est mathématiquement correcte — à valider avec la version officielle du corrigé.)"
+    },
+    {
+      "numero": 13,
+      "contexte": "Ci-dessous, le triangle gris est l'image du triangle blanc après l'application d'une translation.\n[FIGURE : Triangle blanc en haut à gauche, triangle gris (image) en bas à droite, décalé vers la droite et vers le bas.]\nLaquelle des flèches suivantes décrit cette translation ?",
+      "choix": {
+        "A": "Flèche verticale vers le haut",
+        "B": "Flèche verticale vers le bas",
+        "C": "Flèche diagonale vers le bas-droite (longue, oblique)",
+        "D": "Flèche diagonale vers le bas-droite (courte)"
+      },
+      "reponse": "C",
+      "concept": "Transformations géométriques, translation",
+      "note_corrige": "Le triangle est déplacé vers la droite et vers le bas, sur une grande distance. La flèche C (longue, diagonale bas-droite) correspond."
+    },
+    {
+      "numero": 14,
+      "question": "Lequel des triangles suivants est-il possible de construire ?",
+      "choix": {
+        "A": "Un triangle équilatéral et rectangle",
+        "B": "Un triangle isocèle et scalène",
+        "C": "Un triangle rectangle et isocèle",
+        "D": "Un triangle équilatéral et scalène"
+      },
+      "reponse": "C",
+      "concept": "Classification des triangles selon les côtés et les angles",
+      "note_corrige": "Un triangle rectangle isocèle est possible (ex. : angles 90°-45°-45°, deux côtés égaux). A : impossible (équilatéral = 3 angles de 60°, pas de 90°). B : contradiction (isocèle ≠ scalène). D : contradiction (équilatéral = 3 côtés égaux ≠ scalène)."
+    },
+    {
+      "numero": 15,
+      "contexte": "Lors d'un tournoi de soccer, Ludovic doit préparer des verres contenant 250 ml de jus pour les joueurs. Une bouteille contient 3,5 litres de jus.",
+      "question": "Avec une bouteille, combien de verres de jus Ludovic peut-il préparer ?",
+      "choix": { "A": "7", "B": "12", "C": "14", "D": "28" },
+      "reponse": "C",
+      "concept": "Conversion de capacité (L → mL), division",
+      "note_corrige": "3,5 L = 3 500 mL. 3 500 ÷ 250 = 14 verres."
+    },
+    {
+      "numero": 16,
+      "contexte": "À l'école du Tournesol, il y a trois groupes d'élèves en 6e année.\n[TABLEAU : Groupe 601 : 24 élèves | Groupe 602 : 20 élèves | Groupe 603 : 16 élèves]\nLes élèves de 6e année de cette école représentent 1/5 des élèves de cette école.",
+      "question": "Au total, combien y a-t-il d'élèves à l'école du Tournesol ?",
+      "choix": { "A": "12", "B": "240", "C": "300", "D": "360" },
+      "reponse": "C",
+      "concept": "Fractions d'un tout, multiplication",
+      "note_corrige": "Total 6e année = 24 + 20 + 16 = 60. Si 60 = 1/5 du total → Total = 60 × 5 = 300."
+    },
+    {
+      "numero": 17,
+      "question": "Laquelle des fractions suivantes est comprise entre 0,7 et 1 ?",
+      "choix": {
+        "A": "3/5",
+        "B": "16/25",
+        "C": "15/20",
+        "D": "11/10"
+      },
+      "reponse": "C",
+      "concept": "Comparaison de fractions et de décimaux",
+      "note_corrige": "3/5 = 0,6 < 0,7 ✗. 16/25 = 0,64 < 0,7 ✗. 15/20 = 0,75 (entre 0,7 et 1) ✓. 11/10 = 1,1 > 1 ✗."
+    },
+    {
+      "numero": 18,
+      "contexte": "Le périmètre d'un carré est de 40 cm.",
+      "question": "Lequel des rectangles suivants possède la même aire que ce carré ?",
+      "choix": {
+        "A": "Un rectangle qui mesure 8 cm sur 5 cm",
+        "B": "Un rectangle qui mesure 15 cm sur 5 cm",
+        "C": "Un rectangle qui mesure 25 cm sur 4 cm",
+        "D": "Un rectangle qui mesure 8 cm sur 2 cm"
+      },
+      "reponse": "A",
+      "concept": "Périmètre et aire du carré, aire du rectangle",
+      "note_corrige": "Côté du carré = 40 ÷ 4 = 10 cm. Aire = 10² = 100 cm². A : 8 × 5 = 40 ✗ — attendre : 8 × 5 = 40 ≠ 100. Vérification : B : 75, C : 100 ✓, D : 16. La réponse correcte est C (25 × 4 = 100). (Note : réponse A cerclée dans l'examen, mais C est mathématiquement correcte — à valider.)"
+    },
+    {
+      "numero": 19,
+      "contexte": "Karim, Milos et Zack collectionnent des cartes de hockey.\n• Karim possède 325 cartes.\n• Milos possède 15 cartes de moins que Karim.\n• Zack possède deux fois plus de cartes que Milos.",
+      "question": "Laquelle des chaînes d'opérations suivantes permet de déterminer le nombre de cartes que possède Zack ?",
+      "choix": {
+        "A": "325 − 15 × 2",
+        "B": "325 − 15 + 2",
+        "C": "(325 − 15) × 2",
+        "D": "325 × 2 − 15"
+      },
+      "reponse": "C",
+      "concept": "Chaîne d'opérations, priorité des opérations, mise en situation",
+      "note_corrige": "Milos = 325 − 15 = 310. Zack = 310 × 2 = 620. La chaîne correcte est (325 − 15) × 2."
+    },
+    {
+      "numero": 20,
+      "contexte": "Suite visuelle avec des symboles (♦ et ♠) organisés en paires selon un patron répétitif.\n[SUITE : ♦♠ | ♦♠ | ♦♠ | ♠♦ | ♦♠ | ♦♠ | ♦♠ | ?]\n(Le patron alterne : 3 fois ♦♠, puis 1 fois ♠♦, puis recommence)",
+      "question": "Quelle serait le prochain terme de cette suite géométrique ?",
+      "choix": {
+        "A": "♦♠ (petit)",
+        "B": "♦♠ (grand)",
+        "C": "♠♦",
+        "D": "♠♦ (variante)"
+      },
+      "reponse": "D",
+      "concept": "Suite avec régularité, pattern visuel",
+      "note_corrige": "Le patron se répète. Le 8e terme suit le 7e (♦♠) → prochain terme = ♠♦ selon le cycle. Réponse D selon le corrigé."
+    }
+  ]
+}
