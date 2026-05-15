@@ -4,4 +4,5 @@ RUN pip install fastapi uvicorn
 COPY backend/main.py ./backend/main.py
 COPY backend/examples ./backend/examples
 RUN mkdir -p ./backend/static
-CMD ["uvicorn", "backend.main:app", "--host", "0.0.0.0", "--port", "8000"]
+WORKDIR /app/backend
+CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
