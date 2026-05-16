@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import axios from 'axios'
 import ReactMarkdown from 'react-markdown'
+import remarkGfm from 'remark-gfm'
 
 export default function AnswerKey({ corrige }) {
   const [showModal, setShowModal] = useState(false)
@@ -35,13 +36,16 @@ export default function AnswerKey({ corrige }) {
   if (unlocked) {
     return (
       <div className="card">
-        <div className="corrige-banner">
+        <div className="corrige-banner no-print">
           🔓 Corrigé — réservé aux parents et enseignants
         </div>
         <div className="exam-content">
-          <ReactMarkdown>{corrige}</ReactMarkdown>
+          <ReactMarkdown remarkPlugins={[remarkGfm]}>{corrige}</ReactMarkdown>
         </div>
         <div className="btn-row no-print">
+          <button className="btn btn-outline btn-sm" onClick={() => window.print()}>
+            🖨️ Imprimer avec corrigé
+          </button>
           <button className="btn btn-outline btn-sm" onClick={() => setUnlocked(false)}>
             🔒 Masquer le corrigé
           </button>
@@ -84,10 +88,7 @@ export default function AnswerKey({ corrige }) {
               >
                 {checking ? 'Vérification…' : 'Confirmer'}
               </button>
-              <button
-                className="btn btn-outline"
-                onClick={() => setShowModal(false)}
-              >
+              <button className="btn btn-outline" onClick={() => setShowModal(false)}>
                 Annuler
               </button>
             </div>
