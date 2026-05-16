@@ -129,22 +129,21 @@ Réponds UNIQUEMENT avec le JSON demandé."""
         messages=[{"role": "user", "content": user_message}]
     )
 
-    raw = response.content[0].text.strip()
+   raw = response.content[0].text.strip()
 
-    # Nettoyer les balises markdown si présentes
-    if raw.startswith("```"):
-        raw = raw.split("\n", 1)[1]
-        if raw.endswith("```"):
-            raw = raw.rsplit("```", 1)[0]
+    # Extraire le JSON peu importe le format retourné
+    import re
+    json_match = re.search(r'\{.*\}', raw, re.DOTALL)
+    if json_match:
+        raw = json_match.group(0)
 
     try:
         data = json.loads(raw)
     except json.JSONDecodeError:
-        raise HTTPException(status_code=500, detail="Erreur de génération — réponse invalide")
-
+    # Retourner le texte brut si pas de JSON valide
     return {
-        "examen": data.get("examen", ""),
-        "corrige": data.get("corrige", ""),
+        "examen": raw,
+        "corrige": "Corrigé non disponible pour cette génération.",
     }
 
 
