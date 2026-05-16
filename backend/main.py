@@ -18,7 +18,8 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-client = Anthropic()
+def get_client():
+    return Anthropic(api_key=os.environ.get("ANTHROPIC_API_KEY"))
 EXAMPLES_DIR = Path(__file__).parent / "examples"
 PARENT_PASSWORD = os.environ.get("PARENT_PASSWORD", "changeme123")
 
@@ -121,7 +122,7 @@ def generate_exam(req: GenerateRequest):
 
 Réponds UNIQUEMENT avec le JSON demandé."""
 
-    response = client.messages.create(
+    response = get_client().messages.create(
         model="claude-opus-4-5",
         max_tokens=4096,
         system=SYSTEM_PROMPT,
