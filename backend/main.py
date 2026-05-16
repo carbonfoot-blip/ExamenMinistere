@@ -1,4 +1,5 @@
 import os
+import re
 import json
 import hmac
 from pathlib import Path
@@ -18,48 +19,25 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+
 def get_client():
     return Anthropic(api_key=os.environ.get("ANTHROPIC_API_KEY"))
+
+
 EXAMPLES_DIR = Path(__file__).parent / "examples"
 PARENT_PASSWORD = os.environ.get("PARENT_PASSWORD", "changeme123")
 
-SYSTEM_PROMPT = """Tu es un moteur de génération d'examens et de questionnaires ministériels québécois pour élèves du primaire.
+SYSTEM_PROMPT = """Tu es un moteur de generation d'examens ministeriel quebecois pour eleves du primaire. Tu generes des evaluations originales inspirees des exemples fournis. Reponds UNIQUEMENT avec le JSON demande, sans texte avant ou apres.
 
-Tu génères des évaluations authentiques, adaptées au niveau scolaire et à la difficulté demandée, en t'inspirant d'exemples fournis pour reproduire le style, la structure et la complexité — mais en produisant du contenu entièrement original à chaque génération.
-
-Tu ne répètes jamais exactement un exemple fourni. Les exemples servent uniquement de modèles stylistiques et de calibrage de complexité.
-
-NIVEAUX : Primaire 6e année (seul niveau actif).
-
-TYPES D'EXAMENS pour Primaire 6e :
-- MATH-QUESTIONNAIRE : 15-20 questions à choix multiples (A/B/C/D) couvrant : calcul, géométrie, mesure, fractions/décimaux, probabilité, statistiques, algèbre, puissances. Contextes réalistes québécois. Chaque question : contexte en texte normal, question en gras, 4 choix.
-- MATH-C1 : Situation-problème complète avec contexte réaliste, données nécessaires, 1-2 questions guidantes, consigne de démarche.
-- MATH-C2 : Concept ou régularité à analyser, justifier ou compléter. Suite/tableau/figure. Questions courtes avec justification.
-- LECTURE-NARRATIF : Texte narratif original (personnages, intrigue, lieu québécois) + 8-12 questions variées.
-- LECTURE-INFORMATIF : Texte informatif (sciences, société, nature, histoire du Québec) + 8-12 questions variées.
-
-DIFFICULTÉ (1-10) :
-1-2 : Niveau début 5e. Opérations simples, textes ~100 mots, questions littérales.
-3-4 : Niveau milieu 6e. Multi-étapes, textes ~150 mots, inférences simples.
-5-6 : Niveau fin 6e (standard ministériel). Problèmes complexes, textes ~200 mots, raisonnement requis.
-7-8 : Niveau enrichi. Abstraction, justification écrite, textes ~250 mots.
-9-10 : Niveau défi. Situations inédites, textes ~300 mots, questions ouvertes exigeantes.
-
-FORMAT DE SORTIE — réponds UNIQUEMENT avec ce JSON (aucun texte avant ou après) :
+FORMAT DE SORTIE :
 {
-  "examen": "contenu complet de l'examen en markdown, prêt à afficher",
-  "corrige": "corrigé complet avec réponses, démarches et barème en markdown"
+  "examen": "contenu complet en markdown",
+  "corrige": "corrige complet en markdown"
 }
 
-RÈGLES :
-- Contenu 100% original à chaque génération
-- Français québécois standard (terminologie MEQ)
-- Contextes culturellement pertinents (noms, lieux québécois)
-- Cohérence de difficulté du début à la fin
-- Pour LECTURE : texte complet et autonome, pas un résumé
-- Toutes les questions ont exactement une réponse correcte (ou réponses clairement acceptables pour questions ouvertes)
-- Pour MATH-QUESTIONNAIRE : format identique à l'exemple fourni (Question X en gras, contexte, question en gras, choix A/B/C/D)
-"""
+TYPES : MATH-QUESTIONNAIRE (15-20 QCM A/B/C/D), MATH-C1 (situation-probleme), MATH-C2 (raisonnement), LECTURE-NARRATIF (texte + questions), LECTURE-INFORMATIF (texte + questions).
+DIFFICULTE 1-10 : 1-2 debut 5e, 3-4 milieu 6e, 5-6 standard ministeriel, 7-8 enrichi, 9-10 defi.
+Utilise des contextes quebecois authentiques. Contenu 100% original a chaque generation."""
 
 EXAM_TYPES = {
     "Primaire 6e": [
@@ -107,20 +85,20 @@ def get_config():
 @app.post("/api/generate")
 def generate_exam(req: GenerateRequest):
     if req.difficulte < 1 or req.difficulte > 10:
-        raise HTTPException(status_code=400, detail="Difficulté doit être entre 1 et 10")
+        raise HTTPException(status_code=400, detail="Difficulte doit etre entre 1 et 10")
 
     example = load_example(req.type_examen)
     example_section = ""
     if example:
-        example_section = f"\n\nVoici un exemple de référence pour le style et la structure (NE PAS reproduire, s'en inspirer uniquement) :\n{example}"
+        example_section = f"\n\nExemple de reference (NE PAS reproduire, style seulement) :\n{example}"
 
-    user_message = f"""Génère un examen avec ces paramètres :
+    user_message = f"""Genere un examen :
 - Niveau : {req.niveau}
 - Type : {req.type_examen}
-- Difficulté : {req.difficulte}/10
+- Difficulte : {req.difficulte}/10
 {example_section}
 
-Réponds UNIQUEMENT avec le JSON demandé."""
+Reponds UNIQUEMENT avec le JSON."""
 
     response = get_client().messages.create(
         model="claude-opus-4-5",
@@ -129,22 +107,23 @@ Réponds UNIQUEMENT avec le JSON demandé."""
         messages=[{"role": "user", "content": user_message}]
     )
 
-   raw = response.content[0].text.strip()
+    raw = response.content[0].text.strip()
 
-    # Extraire le JSON peu importe le format retourné
-    import re
     json_match = re.search(r'\{.*\}', raw, re.DOTALL)
     if json_match:
         raw = json_match.group(0)
 
     try:
         data = json.loads(raw)
+        return {
+            "examen": data.get("examen", ""),
+            "corrige": data.get("corrige", ""),
+        }
     except json.JSONDecodeError:
-    # Retourner le texte brut si pas de JSON valide
-    return {
-        "examen": raw,
-        "corrige": "Corrigé non disponible pour cette génération.",
-    }
+        return {
+            "examen": raw,
+            "corrige": "Corrige non disponible.",
+        }
 
 
 @app.post("/api/verify-password")
@@ -157,7 +136,7 @@ def verify_password(req: VerifyPasswordRequest):
 def health():
     return {"status": "ok"}
 
-# Servir le frontend React (doit être en dernier)
+
 STATIC_DIR = Path(__file__).parent / "static"
 if STATIC_DIR.exists():
     assets_dir = STATIC_DIR / "assets"
